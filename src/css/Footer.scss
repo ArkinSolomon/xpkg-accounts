@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023. Arkin Solomon.
+ * Copyright (c) 2022-2023. Arkin Solomon.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,6 +12,26 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
  * either express or implied limitations under the License.
  */
-body {
-  background-color: green;
+@import "_themes.scss";
+@import "_fonts.scss";
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 22px;
+
+  font-family: $noto-sans;
+  text-align: center;
+  font-size: 8pt;
+
+  a {
+    text-decoration: underline;
+  }
+
+  &, a {
+    @include themed {
+      color: t('secondary-text-color');
+    }
+  }
 }

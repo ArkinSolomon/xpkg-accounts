@@ -13,30 +13,24 @@
  * either express or implied limitations under the License.
  */
 import './css/reset.css';
-import './css/tailwind.css';
-// import './css/index.scss';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header';
 import Footer from './components/Footer';
-import Create from './pages/Create';
+import Auth from './pages/Auth';
 
-// declare global {
-//   interface Window {
-//     grecaptcha: ReCaptchaV2.ReCaptcha;
-//     SITE_KEY: string;
-//     REGISTRY_URL: string;
-//   }
-// }
+declare global {
+  interface Window {
+    grecaptcha: ReCaptchaV2.ReCaptcha;
+    SITE_KEY: string;
+  }
+}
 
 function App() {
   return (
     <Router>
-      <Header />
       <Routes>
-        {/* <Route path='/' element={<Login />} /> */}
-        <Route path='/create' element={<Create />} />
+        <Route path='/' element={<Auth />} />
       </Routes>
       <Footer />
     </Router>

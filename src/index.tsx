@@ -16,7 +16,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/reset.css';
 import './css/tailwind.css';
-// import './css/index.scss';
+import './css/index.scss';
 
 import App from './App';
 

@@ -12,6 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
  * either express or implied limitations under the License.
  */
-export default function () {
-  return <header>Header lol</header>;
-}
+$small-phone-width: 600px;
+$phone-width: 768px;
+$tablet-width: 992px;
+$desktop-width: 1200px;

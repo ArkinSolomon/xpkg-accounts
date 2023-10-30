@@ -12,8 +12,24 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
  * either express or implied limitations under the License.
  */
-import '../css/create.scss';
+@import '_themes.scss';
 
-export default function () {
-  return <p>Hello world!</p>;
+.theme-button {
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  appearance: none;
+  border: none;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  .theme-icon-color {
+
+    @include themed() {
+      fill: t('theme-change-color');
+    }
+  }
 }
