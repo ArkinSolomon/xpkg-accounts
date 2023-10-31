@@ -24,9 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "overrides": {
-    "nodemailer": "../_EXCLUDED_"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -45,5 +42,10 @@
     "react-app-rewired": "^2.2.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
-  }
+  },
+  "description": "X-Pkg accounts is the frontend application which houses the account management and login/creation screens. It is closely tied to the X-Pkg identity service.",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
